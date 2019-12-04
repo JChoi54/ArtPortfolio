@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="arduino_div">
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar_contents">
+                <div class="sidebar-header">
+                    <h3>
+                        <a class="nav-link">My Projects</a>
+                    </h3>
+                    <hr>
+                </div>
+                <ul class="list-unstyled components sidebar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("projects")}}">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for("arduino")}}">Arduino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("photography")}}">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("graphic")}}">Graphic Design</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="content">
+            <div class="container-fluid">
+                 <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                     <i class="fas fa-align-left"></i>
+                 </button>
+                <h1>Arduino</h1>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content%}

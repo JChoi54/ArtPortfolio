@@ -1,0 +1,330 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="photography_div">
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar_contents">
+                <div class="sidebar-header">
+                    <h3>
+                        <a class="nav-link">My Projects</a>
+                    </h3>
+                    <hr>
+                </div>
+                <ul class="list-unstyled components sidebar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("projects")}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("arduino")}}">Arduino</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for("photography")}}">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("graphic")}}">Graphic Design</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                     <i class="fas fa-align-left"></i>
+                </button>
+                <header class="gallery_header">
+                    <h1>
+                        <span>Photography </span> Gallery
+                    </h1>
+                </header>
+
+                <div id="large_photo_gallery" class="row">
+                    <div class="col-4 padding_space">
+                        <div class="row">
+                            <div class="col">
+                                <div class="photo_gallery">
+                                    <a href="{{ url_for("static", filename = "images/lake.jpg")}}" data-lightbox="mygallery">
+                                         <img src="{{ url_for("static", filename = "images/lake.jpg")}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="photo_gallery">
+                                    <a href="{{ url_for("static", filename = "images/laundry.jpg")}}" data-lightbox="mygallery">
+                                         <img src="{{ url_for("static", filename = "images/laundry.jpg")}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 padding_space">
+                        <div class="photo_gallery">
+                            <a href="{{ url_for("static", filename = "images/polaroid.jpg")}}" data-lightbox="mygallery">
+                                 <img src="{{ url_for("static", filename = "images/polaroid.jpg")}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                            <a href="{{ url_for("static", filename = "images/mirror.jpg")}}" data-lightbox="mygallery">
+                                 <img src="{{ url_for("static", filename = "images/mirror.jpg")}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                            <a href="{{ url_for("static", filename = "images/car.jpg")}}" data-lightbox="mygallery">
+                                 <img src="{{ url_for("static", filename = "images/car.jpg")}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-8 padding_space">
+                        <div class="photo_gallery">
+                            <a href="{{ url_for("static", filename = "images/phone.jpg")}}" data-lightbox="mygallery">
+                                 <img src="{{ url_for("static", filename = "images/phone.jpg")}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 padding_space">
+                        <div class="row">
+                            <div class="col">
+                                <div class="photo_gallery">
+                                    <a href="{{ url_for("static", filename = "images/snowbridge.jpg")}}" data-lightbox="mygallery">
+                                         <img src="{{ url_for("static", filename = "images/snowbridge.jpg")}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="photo_gallery">
+                                    <a href="{{ url_for("static", filename = "images/brooklyn.jpg")}}" data-lightbox="mygallery">
+                                         <img src="{{ url_for("static", filename = "images/brooklyn.jpg")}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                            <a href="{{ url_for("static", filename = "images/broken.jpg")}}" data-lightbox="mygallery">
+                                 <img src="{{ url_for("static", filename = "images/broken.jpg")}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                            <a href="{{ url_for("static", filename = "images/tennis.jpg")}}" data-lightbox="mygallery">
+                                 <img src="{{ url_for("static", filename = "images/tennis.jpg")}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-4 padding_space">
+                        <div class="row">
+                            <div class="col">
+                                <div class="photo_gallery">
+                                    <a href="{{ url_for("static", filename = "images/nyc.jpg")}}" data-lightbox="mygallery">
+                                         <img src="{{ url_for("static", filename = "images/nyc.jpg")}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="photo_gallery">
+                                    <a href="{{ url_for("static", filename = "images/bryant.jpg")}}" data-lightbox="mygallery">
+                                         <img src="{{ url_for("static", filename = "images/bryant.jpg")}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 padding_space">
+                        <div class="photo_gallery">
+                            <a href="{{ url_for("static", filename = "images/calvin.jpg")}}" data-lightbox="mygallery">
+                                 <img src="{{ url_for("static", filename = "images/calvin.jpg")}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                            <a href="{{ url_for("static", filename = "images/underground.jpg")}}" data-lightbox="mygallery">
+                                 <img src="{{ url_for("static", filename = "images/underground.jpg")}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                            <a href="{{ url_for("static", filename = "images/subway.jpg")}}" data-lightbox="mygallery">
+                                 <img src="{{ url_for("static", filename = "images/subway.jpg")}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="medium_photo_gallery" class="row">
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/lake.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/laundry.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/polaroid.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/mirror.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/car.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/subway.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/snowbridge.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/brooklyn.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/broken.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/tennis.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/nyc.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/bryant.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/calvin.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/underground.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/phone.jpg")}}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="small_photo_gallery" class="row">
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/lake.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/laundry.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/polaroid.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/mirror.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/car.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/phone.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/snowbridge.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/brooklyn.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/broken.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/tennis.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/nyc.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/bryant.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/calvin.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/underground.jpg")}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 padding_space">
+                        <div class="photo_gallery">
+                                 <img src="{{ url_for("static", filename = "images/subway.jpg")}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content%}

@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="graphic_div">
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar_contents">
+                <div class="sidebar-header">
+                    <h3>
+                        <a class="nav-link">My Projects</a>
+                    </h3>
+                    <hr>
+                </div>
+                <ul class="list-unstyled components sidebar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("projects")}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("arduino")}}">Arduino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("photography")}}">Photography</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for("graphic")}}">Graphic Design</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="content">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                    <i class="fas fa-align-left"></i>
+                </button>
+                <header class="gallery_header">
+                    <h1>
+                        <span>Graphic </span> Design
+                    </h1>
+                </header>
+
+                <main class="graphic_gallery">
+
+                    <section class="gallery_card">
+                        <a href="{{ url_for("static", filename = "images/vertical_music.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/horizontal_music.jpg")}}" alt="">
+                        </a>
+                        <div>
+                            <h3>Image One</h3>y
+                            <p>
+                                Lorem ipsum dolor sit amet, sea elit melius consectetuer ex, autem petentium complectitur ut nam, labore aliquip ea vix.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="gallery_card" data-aos="fade-right">
+                        <a href="{{ url_for("static", filename = "images/chameleon.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/chameleon.jpg")}}" alt="">
+                        </a>
+                        <div>
+                            <h3>Image Two</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, sea elit melius consectetuer ex, autem petentium complectitur ut nam, labore aliquip ea vix.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="gallery_card" data-aos="fade-left">
+                        <a href="{{ url_for("static", filename = "images/warwick.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/warwick.jpg")}}" alt="">
+                        </a>
+                        <div>
+                            <h3>Image Three</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, sea elit melius consectetuer ex, autem petentium complectitur ut nam, labore aliquip ea vix.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="gallery_card" data-aos="fade-right">
+                        <a href="{{ url_for("static", filename = "images/zed.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/zed.jpg")}}" alt="">
+                        </a>
+                        <div>
+                            <h3>Image Four</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, sea elit melius consectetuer ex, autem petentium complectitur ut nam, labore aliquip ea vix.
+                            </p>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content%}

@@ -1,0 +1,163 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#content {
+    width: calc(100% - 250px);
+    padding: 35px 30px 35px 35px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+#content button{
+    margin-bottom: 20px;
+    background: #8592d5 !important;
+    border: none;
+}
+
+#content h1{
+    color: rgba(4, 4, 20, 0.9);
+    font-size: 41px;
+    font-weight: bold;
+    font-family: Palatino;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1;
+    background: #8592d5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar hr{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-right: 30px;
+}
+
+.sidebar-header{
+    padding-left: 30px;
+    padding-bottom: 0px;
+}
+
+.sidebar_contents{
+    padding-top: 100px;
+}
+
+.sidebar_contents ul li a{
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.sidebar-nav .nav-link{
+    color: white;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: white;
+}
+
+#sidebar .sidebar-nav .active {
+    color: #7386D5;
+    background: white;
+}
+
+#sidebar a, a:hover, a:focus {
+    color: inherit;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+}
+
+.projects_header{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.projects_header h1{
+    font-size: 55px !important;
+    color: #292829 !important;
+    margin-bottom: 2rem;
+}
+
+.projects_header h1 span{
+    color: #8592d5;
+}
+
+.fixed_image1{
+    background: url('/static/images/nyc.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    margin: 60px -50px 60px -50px;
+    z-index: 0;
+}
+
+.fixed_image2{
+    background: url('/static/images/laundry.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    margin: 60px -50px 60px -50px;
+    z-index: 0;
+}
+
+.fixed_image3{
+    background: url('/static/images/warwick.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    margin: 60px -50px 60px -50px;
+    z-index: 0;
+}
+
+.project_title{
+    color: white !important;
+    text-align: center;
+    padding-top: 175px;
+    font-size: 50px !important;
+}
+
+
+.projects_fixed_image p{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.project_div .navbar{
+    background: #8592d5 !important;
+}

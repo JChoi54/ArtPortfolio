@@ -1,0 +1,42 @@
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23023' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23023' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators li {
+  background-color: #999;
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+#caption1{
+    position: absolute;
+    top: 55%;
+    right: 55%;
+}
+
+#caption1 h1{
+    color: rgba(4, 4, 20, 0.9);
+    font-size: 41px;
+    font-weight: bold;
+    font-family: Palatino;
+}
+
+#caption2{
+    position: absolute;
+    top: 37%;
+    right: 55%;
+}
+
+#caption2 h2{
+    color: rgba(4, 4, 20, 0.9);
+    font-size: 20px;
+    font-style: italic;
+    font-family: Palatino;
+}
+
