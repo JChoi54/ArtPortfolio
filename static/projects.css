@@ -119,7 +119,7 @@
 }
 
 .fixed_image1{
-    background: url('/static/images/nyc.jpg') no-repeat center;
+    background: url('/static/images/breadboard.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
