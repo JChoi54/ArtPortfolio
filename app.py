@@ -13,9 +13,9 @@ def projects():
     return render_template('projects.html', title='Projects')
 
 
-@app.route('/projects/arduino')
-def arduino():
-    return render_template('arduino.html', title='Arduino')
+@app.route('/projects/flyer-design')
+def design():
+    return render_template('design.html', title='Flyer Design')
 
 
 @app.route('/projects/photography')
@@ -23,9 +23,9 @@ def photography():
     return render_template('photography.html', title='Photography')
 
 
-@app.route('/projects/graphic')
+@app.route('/projects/digital-art')
 def graphic():
-    return render_template('graphic.html', title='Graphic Design')
+    return render_template('graphic.html', title='Digital Art')
 
 
 @app.route('/demo')
