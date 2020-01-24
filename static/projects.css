@@ -135,7 +135,7 @@
 }
 
 .fixed_image3{
-    background: url('/static/images/breadboard.jpg') no-repeat center;
+    background: url('/static/images/banner_template.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
@@ -150,6 +150,11 @@
     font-size: 50px !important;
 }
 
+.project_title_black{
+    text-align: center;
+    padding-top: 175px;
+    font-size: 50px !important;
+}
 
 .projects_fixed_image p{
     padding-left: 100px;
@@ -161,4 +166,3 @@
     background: #343a40;
     margin: 150px -40px -40px -40px;
 }
-

@@ -12,7 +12,7 @@
                 </div>
                 <ul class="list-unstyled components sidebar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for("projects")}}">Home</a>
+                        <a class="nav-link" href="{{ url_for("projects")}}">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for("photography")}}">Photography</a>
@@ -86,6 +86,67 @@
                             </p>
                         </div>
                     </section>
+
+                    <section class="gallery_card" data-aos="fade-left">
+                        <a href="{{ url_for("static", filename = "images/nasus.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/nasus.jpg")}}" alt="">
+                        </a>
+                        <div>
+                            <h3>Image Five</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, sea elit melius consectetuer ex, autem petentium complectitur ut nam, labore aliquip ea vix.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="gallery_card" data-aos="fade-right">
+                        <a href="{{ url_for("static", filename = "images/unity.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/unity.jpg")}}" alt="">
+                        </a>
+                        <div>
+                            <h3>Image Six</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, sea elit melius consectetuer ex, autem petentium complectitur ut nam, labore aliquip ea vix.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="gallery_card" data-aos="fade-left">
+                        <a href="{{ url_for("static", filename = "images/earth.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/earth.jpg")}}" alt="">
+                        </a>
+                        <div>
+                            <h3>Image Seven</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, sea elit melius consectetuer ex, autem petentium complectitur ut nam, labore aliquip ea vix.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="gallery_card" data-aos="fade-right">
+                        <a href="{{ url_for("static", filename = "images/comfort_women.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/comfort_women.jpg")}}" alt="">
+                        </a>
+                        <div>
+                            <h3>Image Eight</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, sea elit melius consectetuer ex, autem petentium complectitur ut nam, labore aliquip ea vix.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="gallery_card" data-aos="fade-left">
+                        <a href="{{ url_for("static", filename = "images/korean_war_memorial.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/korean_war_memorial.jpg")}}" alt="">
+                        </a>
+                        <div>
+                            <h3>Image Nine</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, sea elit melius consectetuer ex, autem petentium complectitur ut nam, labore aliquip ea vix.
+                            </p>
+                        </div>
+                    </section>
+
                 </main>
             </div>
             <div class="project-footer"></div>

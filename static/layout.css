@@ -11,6 +11,11 @@
     letter-spacing: 0.3px;
 }
 
+.main_navbar .navbar-text a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .main_navbar ul li.dropdown:hover div.dropdown-menu {
     display: block;
 }

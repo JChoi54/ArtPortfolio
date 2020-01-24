@@ -1,0 +1,28 @@
+.banner_designs{
+    max-width: 800px;
+    margin: auto;
+    overflow: auto;
+}
+
+.banner_designs img{
+    width: 100%;
+    height: auto;
+}
+
+.banner_card{
+    margin-bottom: 2rem;
+}
+
+.banner_card:nth-child(even) a{
+    order:2;
+}
+
+.banner_card img:hover{
+    filter: grayscale(100%);
+}
+
+@media (max-width: 550px) {
+    .banner_card{
+        display: block;
+    }
+}

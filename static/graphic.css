@@ -9,15 +9,6 @@
     height: auto;
 }
 
-#photography_div .gallery_header{
-    height: 45vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .gallery_header h1{
     font-size: 55px !important;
     color: #292829 !important;

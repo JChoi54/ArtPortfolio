@@ -36,7 +36,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <span class="navbar-text">Joshua Choi</span>
+                <span class="navbar-text"><a href="{{ url_for("home")}}">Joshua Choi</a></span>
 
                 <div class="collapse navbar-collapse" id="navbar_collapse">
                     <ul class="navbar-nav ml-auto">
@@ -51,6 +51,8 @@
                                 <span class="caret"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="project_dropdown">
+                                <a class="dropdown-item" href="{{ url_for("projects")}}">Projects</a>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ url_for("photography")}}">Photography</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ url_for("graphic")}}">Digital Art</a>
@@ -87,5 +89,6 @@
       });
     </script>
     <script type="text/javascript" src="{{ url_for('static', filename='lightbox-plus-jquery.min.js')}}"></script>
+
 </body>
 </html>

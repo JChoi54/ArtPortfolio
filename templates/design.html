@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<div id="arduino_div">
+<div id="design_div">
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar_contents">
@@ -12,7 +12,7 @@
                 </div>
                 <ul class="list-unstyled components sidebar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for("projects")}}">Home</a>
+                        <a class="nav-link" href="{{ url_for("projects")}}">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for("photography")}}">Photography</a>
@@ -31,7 +31,47 @@
                  <button type="button" id="sidebarCollapse" class="btn btn-dark">
                      <i class="fas fa-align-left"></i>
                  </button>
-                <h1>Flyer Design</h1>
+                <header class="gallery_header">
+                    <h1>
+                        <span>Flyer </span> Design
+                    </h1>
+                </header>
+
+                <main class="banner_designs">
+
+                    <section class="banner_card">
+                        <a href="{{ url_for("static", filename = "images/banner_bubble_tea.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/banner_bubble_tea.jpg")}}" alt="">
+                        </a>
+                    </section>
+
+                    <section class="banner_card" data-aos="fade-right">
+                        <a href="{{ url_for("static", filename = "images/banner_study_break.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/banner_study_break.jpg")}}" alt="">
+                        </a>
+                    </section>
+
+                    <section class="banner_card" data-aos="fade-left">
+                        <a href="{{ url_for("static", filename = "images/banner_asian_food.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/banner_asian_food.jpg")}}" alt="">
+                        </a>
+                    </section>
+
+                    <section class="banner_card" data-aos="fade-right">
+                        <a href="{{ url_for("static", filename = "images/banner_gim.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/banner_gim.jpg")}}" alt="">
+                        </a>
+                    </section>
+
+                    <section class="banner_card" data-aos="fade-left">
+                        <a href="{{ url_for("static", filename = "images/banner_study_break2.jpg")}}" data-lightbox="mygallery">
+                             <img src="{{ url_for("static", filename = "images/banner_study_break2.jpg")}}" alt="">
+                        </a>
+                    </section>
+
+
+                </main>
+
             </div>
         </div>
     </div>
