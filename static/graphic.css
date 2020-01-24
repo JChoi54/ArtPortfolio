@@ -44,8 +44,33 @@
     filter: grayscale(100%);
 }
 
+
+@media (max-width: 992px) {
+    .gallery_card h3{
+        font-size: 24px;
+    }
+    .gallery_card p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery_card h3{
+        font-size: 20px;
+    }
+    .gallery_card p{
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 550px) {
     .gallery_card{
         display: block;
+    }
+    .gallery_card h3{
+        font-size: 26px;
+    }
+    .gallery_card p{
+        font-size: 16px;
     }
 }
