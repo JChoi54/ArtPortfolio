@@ -32,6 +32,11 @@
     margin-bottom: 2rem;
 }
 
+.gallery_card .comfort_women{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
 .gallery_card div{
     padding: 2rem;
 }
