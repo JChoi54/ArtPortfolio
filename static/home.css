@@ -216,8 +216,8 @@
         font-size: 10px;
     }
     .buttons-space {
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-bottom: 40px;
+        display: block;
     }
     .email-dropdown ul li a{
         font-size: 8px;
